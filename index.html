@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Date Guessing Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Decorative background elements -->
+    <div class="floating-elements" aria-hidden="true">
+        <span>✦</span>
+        <span>✧</span>
+        <span>✨</span>
+        <span>★</span>
+        <span>✦</span>
+        <span>🎈</span>
+        <span>✧</span>
+    </div>
+
+    <!-- Dark / Light mode button -->
+    <button
+        id="themeToggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch theme"
+        title="Switch theme"
+    >
+        ☀️
+    </button>
+
+    <main>
+
+        <!-- ================================
+             HEADER
+        ================================= -->
+
+        <header class="hero">
+
+            <div class="hero-icon">🎂</div>
+
+            <h1>
+                Birthday Date
+                <span>Guessing Game</span>
+            </h1>
+
+            <p>
+                Think of your birth date ..
+                Answer a few simple questions
+                and let me guess it! ✨
+            </p>
+
+        </header>
+
+
+        <!-- ================================
+             INTRO SCREEN
+        ================================= -->
+
+        <section id="intro" class="box intro">
+
+            <div class="big-icon">🔮</div>
+
+            <h2>Are you Ready?</h2>
+
+            <p>
+                Keep your birth date in your mind.
+               Will show you some cards one by one , And let's see whether I could guess your date of birth right.
+            </p>
+
+            <button id="start" class="primary-button" type="button">
+                ✨ Start Game
+            </button>
+
+        </section>
+
+
+        <!-- ================================
+             GAME SCREEN
+        ================================= -->
+
+        <section id="game" class="hidden">
+
+            <!-- Progress -->
+            <div class="progress">
+
+                <span id="qtext">
+                    Question 1 of 5
+                </span>
+
+                <span id="pct">
+                    20%
+                </span>
+
+            </div>
+
+            <div class="bar">
+                <div id="bar"></div>
+            </div>
+
+
+            <!-- Question Panel -->
+            <section class="box panel">
+
+                <div
+                    id="badge"
+                    class="badge"
+                >
+                    QUESTION 1
+                </div>
+
+
+                <!-- Card -->
+                <div class="stage">
+
+                    <article
+                        id="card"
+                        class="card"
+                    >
+
+                        <div class="card-top">
+
+                            <b>YOUR CARD</b>
+
+                            <span id="count">
+                                1 / 5
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            id="numbers"
+                            class="numbers"
+                        >
+                        </div>
+
+
+                        <small>
+                            ✨ Take a look!
+                        </small>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Question -->
+                <h2>
+                    Is your date of birth on this card?
+                </h2>
+
+                <p class="muted">
+                 Answer YES or NO 👇
+                </p>
+
+
+                <!-- Answer buttons -->
+                <div class="buttons">
+
+                    <button
+                        id="yes"
+                        class="answer yes"
+                        type="button"
+                    >
+                        ✓ YES
+                    </button>
+
+                    <button
+                        id="no"
+                        class="answer no"
+                        type="button"
+                    >
+                        ✕ NO
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- ================================
+             RESULT SCREEN
+        ================================= -->
+
+        <section
+            id="result"
+            class="box result hidden"
+        >
+
+            <div class="big-icon">
+                🎩✨
+            </div>
+
+            <p>
+                I think your birth date is...
+            </p>
+
+            <div id="answer">
+                --
+            </div>
+
+            <h3>
+                🎉 Did I get it right? 😎
+            </h3>
+
+            <button
+                id="again"
+                class="primary-button"
+                type="button"
+            >
+                🔄 Play Again
+            </button>
+
+        </section>
+
+
+        <!-- ================================
+             FOOTER
+        ================================= -->
+
+        <footer>
+           ✨✨ Made and designed by Divyanshi Gupta ✨✨
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
